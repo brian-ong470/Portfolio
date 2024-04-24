@@ -13,7 +13,7 @@ import Projects from './pages/Projects';
 const router=createBrowserRouter([
   {path: '/',
   element: <Layout/>,
-  errorElement:<ErrorPage/>,
+  errorElement:<UserProfile/>,
   children: [
     {index:true, element:<Home />},
     {path: "posts/:id", element: <PostDetail/>},
